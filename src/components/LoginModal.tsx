@@ -48,10 +48,10 @@ const LoginModal = ({ isOpen, onClose, onLogin }: LoginModalProps) => {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-md z-50"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4"
           >
-            <div className="bg-gradient-to-b from-primary/20 to-card p-0.5 rounded-2xl neon-box">
-              <div className="bg-card rounded-2xl p-6 md:p-8">
+            <div className="w-full max-w-md bg-gradient-to-b from-primary/20 to-card p-0.5 rounded-2xl neon-box">
+              <div className="bg-card rounded-2xl p-6 md:p-8 relative">
                 {/* Close button */}
                 <button
                   onClick={onClose}
